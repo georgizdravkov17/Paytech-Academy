@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2>ROBOT FACTORY</h2>
+      <div class="logo">
+        <a href="https://www.playtech.com/" target="_blank"
+          ><img src="./images/paytech.JPG" alt="paytech_logo"
+        /></a>
+      </div>
+    </header>
+    <section id="slide-1" class="factory-section">
+      <div class="heading">
+        <h1>Basic Robot</h1>
+      </div>
+      <div class="content-wrapper">
+        <div class="img">
+          <img src="./images/paytech.JPG" alt="paytech" />
+        </div>
+        <div class="content">
+          <div class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
+            molestiae sunt? Debitis, tempore adipisci voluptatum id earum sequi
+            culpa sit.
+          </div>
+          <div class="item">
+            Explicabo quo cumque laboriosam illo delectus ad veniam sint,
+            blanditiis reiciendis ea odit nulla ullam, autem, debitis ducimus
+            accusamus aliquam.
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="./images/good-luck.jpg" alt="good luck" />
+            </div>
+            <p>
+              Culpa eveniet quibusdam architecto sequi saepe harum iusto quasi
+              commodi veniam iure reiciendis, nisi enim debitis? Excepturi non
+              iste eum?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="robot-creation">
+      <div class="heading delimeter">
+        <h1>Create Robot</h1>
+      </div>
+      <form class="form delimeter">
+        <div class="group">
+          <label for="name">Name</label>
+          <input type="text" id="name" value="Robot Name" required />
+        </div>
+        <div class="group">
+          <label for="robot-type">Select Type</label>
+          <select name="robots" id="robot-type" required>
+            <option value="basicRobot">Basic Robot</option>
+            <option value="smallRobot">Small Robot</option>
+          </select>
+        </div>
+        <div class="group">
+          <label for="color">Select Color</label>
+          <input type="color" id="color" value="#e96126" required />
+        </div>
+        <div class="group">
+          <label>Select Options</label>
+          <div>
+            <input type="checkbox" id="canJump" required />
+            <label for="canJump">Can jump</label>
+          </div>
+          <div>
+            <input type="checkbox" id="canTalk" required />
+            <label for="canJump">Can talk</label>
+          </div>
+          <div>
+            <input type="checkbox" id="canBlink" required />
+            <label for="canJump">Can blink</label>
+          </div>
+        </div>
+        <div class="group">
+          <label for="comments">Write Comments</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Comments..."
+          ></textarea>
+        </div>
+        <div class="buttons">
+          <button>Create Robot</button>
+          <button>Show Created Robbots</button>
+        </div>
+      </form>
+      <div class="robbots"></div>
+    </section>
+  </body>
+</html>
