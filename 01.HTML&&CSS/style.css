@@ -38,10 +38,104 @@ section#slide-1 .content-wrapper {
   display: flex;
 }
 
-section#slide-1 .content-wrapper .img {
+section#slide-1 .content-wrapper .robot-container {
   width: 40%;
   margin-right: 1rem;
   border: 1px solid black;
+  border: 2px solid black;
+  position: relative;
+  background-color: white;
+}
+
+section#slide-1 .content-wrapper .robot-container .head {
+  width: 18%;
+  height: 20%;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: 19%;
+  left: 44%;
+}
+
+section#slide-1 .content-wrapper .robot-container .head .eye {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+}
+
+section#slide-1 .content-wrapper .robot-container .head .left-eye {
+  top: 25%;
+  left: 30%;
+}
+
+section#slide-1 .content-wrapper .robot-container .head .right-eye {
+  top: 25%;
+  left: 54%;
+}
+
+section#slide-1 .content-wrapper .robot-container .head .smile {
+  -webkit-clip-path: ellipse(50% 9% at 50% 50%);
+          clip-path: ellipse(50% 9% at 50% 50%);
+  width: 50%;
+  height: 60%;
+  background-color: red;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+}
+
+section#slide-1 .content-wrapper .robot-container .hand {
+  width: 3%;
+  height: 25%;
+  background-color: #EBEBEB;
+  position: absolute;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+section#slide-1 .content-wrapper .robot-container .left-hand {
+  top: 40%;
+  left: 38%;
+}
+
+section#slide-1 .content-wrapper .robot-container .right-hand {
+  top: 40%;
+  left: 64%;
+}
+
+section#slide-1 .content-wrapper .robot-container .body {
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+          clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  width: 25%;
+  height: 25%;
+  background-color: blue;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: #E96126;
+}
+
+section#slide-1 .content-wrapper .robot-container .leg {
+  width: 5%;
+  height: 30%;
+  background-color: inherit;
+  border: 2px solid black;
+  position: absolute;
+  border-radius: 5px;
+}
+
+section#slide-1 .content-wrapper .robot-container .left-leg {
+  top: 65%;
+  left: 46%;
+}
+
+section#slide-1 .content-wrapper .robot-container .right-leg {
+  top: 65%;
+  left: 54%;
 }
 
 section#slide-1 .content-wrapper .content {
